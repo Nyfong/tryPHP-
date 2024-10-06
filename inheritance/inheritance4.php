@@ -31,8 +31,12 @@ class SavingAcc extends BankAcc{
     }
 
 }
-    $user = new BankAcc();
-    echo($user->deposit(1000));
+    $account = new SavingAcc();
+    $account->deposit(100);
+    $account->setInterestRate(0.01);
+    $account->addInterest();
+    echo $account->getBalance();
+
     
 
 ?>

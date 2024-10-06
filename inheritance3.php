@@ -2,7 +2,7 @@
 
 class Student {
     public $name, $surname, $country, $tuition, $indexNumber;
-    protected $studentStatus = false;
+    protected $studentStatus = true;
 
    protected function helloPmv()
     {
@@ -21,12 +21,7 @@ class  Pmv extends Student{
 
  $object = new Pmv();
  
- if($object->statusPmv() == false)
- {
-    echo("0");
- }
-else {
-    echo "{$object->statusPmv()}";
-}
+ $statusPmv =($object->statusPmv() == false)? "0" :  "{$object->statusPmv()}";
+ echo ($statusPmv); 
 
 ?>

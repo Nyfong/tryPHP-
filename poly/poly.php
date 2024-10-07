@@ -42,3 +42,4 @@ greeting($people)
 // The idea is to create the Absract Class and give definition
 ?>
 
+

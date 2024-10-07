@@ -33,6 +33,7 @@ function castingSel($Bajai)
         echo "<br>";
     }
 }
+echo (date("y-m-d-l")."<br>");
 
 castingSel($Bajai);
 ?>
